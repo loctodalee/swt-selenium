@@ -33,9 +33,7 @@ public class testcase1 {
     public static void testTestcase1() {
         WebDriver driver = driverFactory.getChromeDriver();
         try{
-            // Check ScreeShot folder is existed if not will create
-            File destDirectory = new File("/ScreenShot");
-            destDirectory.mkdirs();
+            File destDirectory = new File("D:\\FPT\\SWT\\selenium\\selenium-webdriver-java\\src\\test\\java\\BAITAP\\Capture");
             // Step 1. Go to http://live.techpanda.org/
             driver.get("http://live.techpanda.org");
             Actions actions = new Actions(driver);
