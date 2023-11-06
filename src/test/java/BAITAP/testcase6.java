@@ -69,7 +69,7 @@ public class testcase6 {
 
             //3. Login in application using previously created credential
             LoginPage loginPage = new LoginPage(driver);
-            loginPage.loginAccount("loc@gmail.com","123456789");
+            loginPage.loginAccount("letanloc5@gmail.com","123456789");
 
             //4. Click on MY WISHLIST link
             driver.findElement(By.xpath("//span[@class='label'][normalize-space()='Account']")).click();

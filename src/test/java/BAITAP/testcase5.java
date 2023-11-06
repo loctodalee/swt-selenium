@@ -59,7 +59,7 @@ public class testcase5 {
             String firstName = "Le";
             String middleName = "Tan";
             String lastName = "Loc";
-            String email = "letanloc3@gmail.com";
+            String email = "letanloc@gmail.com";
             String password = "123456789";
             String confirm = password;
 

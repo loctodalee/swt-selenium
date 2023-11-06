@@ -46,13 +46,19 @@ public class CheckOutPage {
         } catch (Exception e){
             System.out.println("shipping drop down error ");
         }
-
+        driver.findElement(By.xpath("//input[@id='shipping:firstname']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:firstname']")).sendKeys("Test");
+        driver.findElement(By.xpath("//input[@id='shipping:middlename']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:middlename']")).sendKeys("Soft");
+        driver.findElement(By.xpath("//input[@id='shipping:lastname']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:lastname']")).sendKeys("Ware");
+        driver.findElement(By.xpath("//input[@id='shipping:company']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:company']")).sendKeys("FPT");
+        driver.findElement(By.xpath("//input[@id='shipping:street1']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:street1']")).sendKeys("123 ABC");
+        driver.findElement(By.xpath("//input[@id='shipping:street2']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:street2']")).sendKeys("456 ABC");
+        driver.findElement(By.xpath("//input[@id='shipping:city']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:city']")).sendKeys("United States");
         WebElement selectedCountry = driver.findElement(By.xpath("//select[@id='shipping:country_id']"));
         Select checkout = new Select(selectedCountry);
@@ -61,8 +67,11 @@ public class CheckOutPage {
         WebElement regioned = driver.findElement(By.xpath("//select[@id='shipping:region_id']"));
         Select selectedRegion = new Select(regioned);
         selectedRegion.selectByValue("2");
+        driver.findElement(By.xpath("//input[@id='shipping:postcode']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:postcode']")).sendKeys("1111");
+        driver.findElement(By.xpath("//input[@id='shipping:telephone']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:telephone']")).sendKeys("0123456789");
+        driver.findElement(By.xpath("//input[@id='shipping:fax']")).clear();
         driver.findElement(By.xpath("//input[@id='shipping:fax']")).sendKeys("123456789");
         driver.findElement(By.xpath("//button[@onclick='shipping.save()']")).click();
     }
